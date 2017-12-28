@@ -3,10 +3,6 @@ div{
   outline: solid 3px red;
 }
 
-header{
-  outline: solid 3px red;
-}
-
 footer{
   outline: solid 3px red;
 }
@@ -14,25 +10,41 @@ footer{
 /*main*/
 html{
   font-size: 18px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /*header*/
 
-header{
-  height: 1.5rem;
+.mainheader{
   width: 100%;
   display: flex;
-  position: fixed;
   top: 0;
   background-color: black;
 }
 
+.mainheader .container{
+  display: flex;
+  width: 100%;
+  padding: 12px 0 12px 0.5em;
+  margin: 0;
+  align-items: center;
+}
+
+.mainheader img{
+  height: 1.5rem;
+  padding-right: 15px;
+  display: inline-block;
+}
 /*main content*/
 .maincontent{
-  top: 1.5rem;
-  width: 100%;
+  width: 960px;
   display: flex;
-  position: relative;
 }
 
 /*banner*/
@@ -53,6 +65,9 @@ header{
   width: 100%;
   /*end temp*/
   background-color: firebrick;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*products section */
