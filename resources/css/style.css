@@ -22,15 +22,16 @@ html{
 /*header*/
 
 .mainheader{
-  width: 100%;
   display: flex;
   top: 0;
   background-color: black;
+  align-items: center;
+  justify-content: center;
 }
 
 .mainheader .container{
   display: flex;
-  width: 100%;
+  width: 960px;
   padding: 12px 0 12px 0.5em;
   margin: 0;
   align-items: center;
@@ -41,11 +42,6 @@ html{
   padding-right: 15px;
   display: inline-block;
 }
-/*main content*/
-.maincontent{
-  width: 960px;
-  display: flex;
-}
 
 /*banner*/
 
@@ -55,7 +51,40 @@ html{
   display: flex;
   background-image: url("../images/moto.jpeg");
   background-size: cover;
+  z-index: 1;
+  align-items: center;
+
 }
+
+.banner .container{
+  width: 960px;
+}
+
+.newarrival{
+  background-color: black;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  display: block;
+  width: 20rem;
+}
+
+.newarrival h2, .newarrival h3{
+  font-weight: bold;
+  margin-left: 3rem;
+}
+
+.newarrival h3{
+  font-size: 1rem;
+  margin: 2rem 0 0 3rem;
+}
+
+.newarrival h2{
+  font-size: 2rem;
+  margin: 0 0 2rem 3rem;
+
+}
+
 
 /*navbar*/
 
@@ -65,6 +94,13 @@ html{
   width: 100%;
   /*end temp*/
   background-color: firebrick;
+  display: flex;
+
+}
+
+.navbar .container{
+  width: 960px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
