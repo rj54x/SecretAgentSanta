@@ -83,4 +83,6 @@ html{
 footer{
   height: 5rem;
   background-color: black;
+  display: flex;
+  align-items: center;
 }
