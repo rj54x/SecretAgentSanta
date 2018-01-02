@@ -58,6 +58,7 @@ html{
 
 .banner .container{
   width: 960px;
+  display: flex;
 }
 
 .newarrival{
@@ -71,7 +72,6 @@ html{
 
 .newarrival h2, .newarrival h3{
   font-weight: bold;
-  margin-left: 3rem;
 }
 
 .newarrival h3{
@@ -89,14 +89,10 @@ html{
 /*navbar*/
 
 .navbar{
-  /*temp for layout*/
-  height: 2rem;
-  width: 100%;
-  /*end temp*/
   background-color: firebrick;
   display: flex;
-
 }
+
 
 .navbar .container{
   width: 960px;
@@ -104,6 +100,10 @@ html{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar span{
+  margin: 0.75rem 0;
 }
 
 /*products section */
@@ -121,4 +121,8 @@ footer{
   background-color: black;
   display: flex;
   align-items: center;
+}
+
+footer .container{
+  width: 960px;
 }
