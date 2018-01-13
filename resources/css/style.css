@@ -109,10 +109,29 @@ html{
 /*products section */
 
 .products{
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
     /*temp for layout*/
     height: 28rem;
     /*end temp*/
+}
+
+.prodexample{
+  display: flex;
+  margin: 3rem 0rem;
+  /*temp for layout*/
+  height: 15rem;
+  width: 15rem;
+  /*end temp*/
+}
+
+.prodinfo{
+  display: flex;
+  width: 35%;
+  /*temp for layout*/
+  height: 5rem;
+  /*end temp*/
 }
 
 /*footer section */
